@@ -6,7 +6,20 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      transformOrigin: {
+        zero: '0 0 ',
+      },
+      transitionProperty: {
+        width: 'width',
+      },
+      backgroundImage: {
+        first: "url('../asserts/Icons/background/1.jpg')",
+      },
       colors: {
+        'main-cyan': '#00ffff',
+        'main-voilet': '#9c31fe',
+        'primary-blue': '#5956e9',
+        'hover-blue': '#5a66f9',
         'regal-blue': '#243c5a',
         'nft-dark': '#24252D',
         'nft-gray-1': '#E3E1E3',
@@ -20,53 +33,61 @@ module.exports = {
         'file-active': '#2196f3',
         'file-accept': '#00e676',
         'file-reject': '#ff1744',
+        green: 'green',
+        'text-blue': '#5956df',
+        red: '#C21010',
         'overlay-black': 'rgba(0, 0, 0, 0.8)',
       },
-      width: {
-        215: '215px',
-        357: '357px',
-        557: '557px',
+      keyframes: {
+        navhover: {
+          '0%': {
+
+            borderBottomWidth: '0%',
+            borderBottom: '5px',
+          },
+          '100%': {
+            borderBottomWidth: '100%',
+            borderBottom: '5px',
+          },
+        },
       },
-      minWidth: {
-        155: '155px',
-        190: '190px',
-        215: '215px',
-        240: '240px',
-        256: '256px',
-        327: '327px',
-      },
-      height: {
-        300: '300px',
-        557: '557px',
-      },
-      inset: {
-        45: '45%',
-        65: '65px',
-      },
-      spacing: {
-        65: '65px',
-      },
-      flex: {
-        2: '2 2 0%',
-      },
-      lineHeight: {
-        70: '70px',
-      },
-      zIndex: {
-        '-5': '-5',
-        0: '0',
+      animation: {
+        navhover: 'navhover 1s ease-in-out',
       },
     },
     screens: {
       lg: { max: '1800px' },
+      xmd: { max: '1200px' },
       md: { max: '990px' },
-      sm: { max: '600px' },
-      xs: { max: '400px' },
-      minmd: '1700px',
+      sm: { max: '700px' },
+      xs: { max: '500px' },
+      minmd: { min: '990px' },
       minlg: '2100px',
     },
     fontFamily: {
       poppins: ['Poppins', 'sans-serif'],
+      black: ['Gilroy-Black', 'sans-serif'],
+      blackItalic: ['Gilroy-Black-Italic', 'sans-serif'],
+      bold: ['Gilroy-Bold', 'sans-serif'],
+      boldItalic: ['Gilroy-Bold-Italic', 'sans-serif'],
+      extraBold: ['Gilroy-Extra-Bold', 'sans-serif'],
+      extraBoldItalic: ['Gilroy-Extra-Bold-Italic', 'sans-serif'],
+      heavy: ['Gilroy-Heavy', 'sans-serif'],
+      heavyItalic: ['Gilroy-Heavy-Italic', 'sans-serif'],
+      light: ['Gilroy-Light', 'sans-serif'],
+      medium: ['Gilroy-Medium', 'sans-serif'],
+      lightItalic: ['Gilroy-Light-Italic', 'sans-serif'],
+      mediumItalic: ['Gilroy-Medium-Italic', 'sans-serif'],
+      regular: ['Gilroy-Regular', 'sans-serif'],
+      regularItalic: ['Gilroy-Regular-Italic', 'sans-serif'],
+      semibold: ['Gilroy-Semibold', 'sans-serif'],
+      thin: ['Gilroy-Thin', 'sans-serif'],
+      thinItalic: ['Gilroy-Thin-Italic', 'sans-serif'],
+      ultraLight: ['Gilroy-Ultra-Light', 'sans-serif'],
+      ultraLightItalic: ['Gilroy-Ultra-Light-Itali', 'sans-serif'],
+      Libre: ['LibreBaskerville', 'sans-serif'],
+      proxima: ['ProximaNova', 'sans-serif'],
+
     },
   },
   variants: {

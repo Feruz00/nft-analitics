@@ -1,26 +1,249 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: 'Gilroy-Black';
+    src: url('../asserts/font/Gilroy-Black.eot?#iefix') format('embedded-opentype'), 
+    url('../asserts/font/Gilroy-Black.woff') format('woff'), 
+    url('../asserts/font/Gilroy-Black.ttf')  format('truetype');
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+    font-family: 'Gilroy-Black-Italic';
+    src: url('../asserts/font/Gilroy-BlackItalic.eot?#iefix') format('embedded-opentype'), 
+    url('../asserts/font/Gilroy-BlackItalic.woff') format('woff'),
+    url('../asserts/font/Gilroy-BlackItalic.ttf')  format('truetype')
 }
 
-* {
-  box-sizing: border-box;
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('../asserts/font/Gilroy-Bold.eot?#iefix')format('embedded-opentype'), 
+    url('../asserts/font/Gilroy-Bold.woff2') format('woff2'), 
+    url('../asserts/font/Gilroy-Bold.woff') format('woff'), 
+    url('../asserts/font/Gilroy-Bold.ttf')  format('truetype'),
+    url('../asserts/font/Gilroy-Bold.svg') format('svg');
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+@font-face {
+    font-family: 'Gilroy-Bold-Italic';
+    src: url('../asserts/font/Gilroy-BoldItalic.eot?#iefix') format('embedded-opentype'), 
+    url('../asserts/font/Gilroy-BoldItalic.woff') format('woff'),
+    url('../asserts/font/Gilroy-BoldItalic.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy-Extra-Bold';
+    src: url('../asserts/font/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'), 
+    url('../asserts/font/Gilroy-ExtraBold.woff2') format('woff2'), 
+    url('../asserts/font/Gilroy-ExtraBold.woff') format('woff'), 
+    url('../asserts/font/Gilroy-ExtraBold.ttf')  format('truetype'),
+    url('../asserts/font/Gilroy-ExtraBold.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Gilroy-Extra-Bold-Italic';
+    src: url('../asserts/font/Gilroy-ExtraBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy-Heavy';
+    src: url('../asserts/font/Gilroy-Heavy.ttf')   format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy-Heavy-Italic';
+    src: url('../asserts/font/Gilroy-HeavyItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url('../asserts/font/Gilroy-Light.eot?#iefix') format('embedded-opentype'), 
+    url('../asserts/font/Gilroy-Light.woff2') format('woff2'), 
+    url('../asserts/font/Gilroy-Light.woff') format('woff'), 
+    url('../asserts/font/Gilroy-Light.ttf')  format('truetype'),
+    url('../asserts/font/Gilroy-Light.svg') format('svg'); 
+}
+
+@font-face {
+    font-family: 'Gilroy-Light-Italic';
+    src: url('../asserts/font/Gilroy-LightItalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('../asserts/font/Gilroy-Medium.eot?#iefix') format('embedded-opentype'), 
+    url('../asserts/font/Gilroy-Medium.woff2') format('woff2'), 
+    url('../asserts/font/Gilroy-Medium.woff') format('woff'), 
+    url('../asserts/font/Gilroy-Medium.ttf')  format('truetype'),
+    url('../asserts/font/Gilroy-Medium.svg') format('svg'); 
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium-Italic';
+    src: url('../asserts/font/Gilroy-MediumItalic.ttf') format('truetype'); 
+}
+
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('../asserts/font/Gilroy-Regular.eot?#iefix') format('embedded-opentype'), 
+    url('../asserts/font/Gilroy-Regular.woff2') format('woff2'), 
+    url('../asserts/font/Gilroy-Regular.woff') format('woff'), 
+    url('../asserts/font/Gilroy-Regular.ttf')  format('truetype'),
+    url('../asserts/font/Gilroy-Regular.svg') format('svg'); 
+}
+
+@font-face {
+    font-family: 'Gilroy-Regular-Italic';
+    src: url('../asserts/font/Gilroy-RegularItalic.ttf') format('truetype'); 
+}
+
+@font-face {
+    font-family: 'Gilroy-Semibold';
+    src: url('../asserts/font/Gilroy-SemiBold.ttf') format('truetype'); 
+}
+
+@font-face {
+    font-family: 'Gilroy-Thin';
+    src: url('../asserts/font/Gilroy-Thin.ttf') format('truetype'); 
+}
+
+@font-face {
+    font-family: 'Gilroy-Thin-Italic';
+    src: url('../asserts/font/Gilroy-ThinItalic.ttf') format('truetype'); 
+}
+
+@font-face {
+    font-family: 'Gilroy-Ultra-Light';
+    src: url('../asserts/font/Gilroy-UltraLight.ttf') format('truetype'); 
+}
+
+@font-face {
+    font-family: 'Gilroy-Ultra-Light-Italic';
+    src: url('../asserts/font/Gilroy-UltraLightItalic.ttf') format('truetype'); 
+}
+
+
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url('../asserts/font/LibreBaskerville-Italic.ttf') format('truetype'); 
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('../asserts/font/ProximaNova-Regular.ttf') format('truetype'); 
+}
+
+
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    /* border-bottom-width: ; */
+    /* border-bottom-height */
+}
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.nav-dropdown > i{
+    visibility: hidden;
+    /* border-bottom-style: transparent; */
+    /* display: inline-block; */
+}
+.nav-dropdown:hover > i{
+    visibility: visible;
+}
+
+.nav-dropdown::after {
+    display:block;
+    position: absolute;
+    bottom: -5px;
+    content: '';
+    border-bottom: solid 4px #5956e9;
+    width: 100%;  
+    /* height: 4px; */
+
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+.nav-dropdown:hover::after { transform: scaleX(1); }
+
+.bg-gradient{
+    background-image: linear-gradient(45deg, #058383, #c705bd);
+
+}
+.text-gradient{
+    background: linear-gradient(45deg, #c64d94 ,#010401);;
+    background-clip: text;
+    color: transparent;
+}
+.text-top-bottom{
+    background: linear-gradient(to bottom, #de57a6 48%, #9757d1 );;
+    background-clip: text;
+    color: transparent;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+  
+.label {
+    transform: scale(1.5);
+}
+  
+.ball {
+    top: 2px;
+    left: 2px;
+    transition: transform 0.2s linear;
+}
+  
+/*  target the elemenent after the label*/
+.checkbox:checked + .label .ball{
+    transform: translateX(16px);
+}
+  
+.fa-moon {
+    color: pink;
+    /* font-size: 9px; */
+}
+  
+.fa-sun {
+    color: yellow;
+    /* font-size: 9px; */
+}
+.fullp{
+    top: calc(100% + .5rem);
+}
+.nav_search{
+    width: max-content;
+    transition: .4s;
+}
+.nav_search:hover{
+    width: 100%;
+}
+.nav__search > input{
+    /* background-color: #5956e9; */
+    display: none;
+}
+.nav__search:hover input {
+    display: block;
+}
+.bg-to-top-bottom{
+    background: linear-gradient(to bottom, #00ffff, #9c31fe);
+}
+.bg-to-bottom-top{
+    background: linear-gradient(to top, #00ffff, #9c31fe);
+}
+.bg-border{
+    border: 1px solid linear-gradient(to top, #00ffff, #9c31fe);
+}
+.border-right-image{
+    border-right-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #00ffff, #9c31fe) 1;
 }
