@@ -9,7 +9,7 @@ import gold from '../asserts/Icons/2_slider/images.png';
 import tofu from '../asserts/Icons/2_slider/tofu.png';
 
 const Pictures = () => (
-  <div className="flex flex-col justify-start items-center md:justify-center">
+  <div className="flex flex-col justify-start items-center md:justify-center dark:bg-nft-gray-3">
     <div className="h-1/3  w-2/3 mb-6 ">
       <h1 className="font-heavy text-center text-[#B7C4CF] text-4xl sm:text-xl xs:text-lg">ThisRare supports many chains and we are already powering many prominent web3 projects</h1>
     </div>

@@ -1,10 +1,10 @@
 import React from 'react';
-import { HomeSlider1, Navbar, Analytics, Pictures } from '../components';
+import { HomeSlider1, Navbar, Analytics, Pictures, CollectionsSlider, Track, DataAPI, Join, Footer } from '../components';
 import Title from '../components/Title';
 
 const Home = () => (
 
-  <div>
+  <div className="dark:bg-nft-gray-3">
     <Title title="Home" />
     <div className="bg-first w-full
     flex flex-col items-center bg-cover bg-no-repeat
@@ -17,7 +17,7 @@ const Home = () => (
       </div>
 
     </div>
-    <div className="w-full flex justify-center mt-7">
+    <div className="w-full flex justify-center mt-7 ">
 
       <Analytics />
     </div>
@@ -26,7 +26,15 @@ const Home = () => (
 
       <Pictures />
     </div>
-
+    <div className="bg-second w-full flex flex-col">
+      <CollectionsSlider />
+      <Track />
+      <DataAPI />
+    </div>
+    <div className="slider_last w-full p-10 bg-no-repeat min-h-[50vh] h-full sm:h-[150vh] flex items-center">
+      <Join />
+    </div>
+    <Footer />
   </div>
 );
 // rich text admin panel

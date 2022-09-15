@@ -3,5 +3,9 @@ import Footer from './Footer';
 import HomeSlider1 from './Home_Slider_1';
 import Analytics from './Analytics';
 import Pictures from './Pictures';
+import CollectionsSlider from './CollectionsSlider';
+import Track from './Track';
+import DataAPI from './DataAPI';
+import Join from './Join';
 
-export { Navbar, Footer, HomeSlider1, Analytics, Pictures };
+export { Navbar, Footer, HomeSlider1, Analytics, Pictures, CollectionsSlider, Track, DataAPI, Join };

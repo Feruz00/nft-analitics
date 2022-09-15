@@ -14,8 +14,12 @@ module.exports = {
       },
       backgroundImage: {
         first: "url('../asserts/Icons/background/1.jpg')",
+        second: "url('../asserts/Icons/background/4-6.jpg')",
+        three: "url('../asserts/Icons/background/6.jpg')",
+
       },
       colors: {
+        orange: '#F57328',
         'main-cyan': '#00ffff',
         'main-voilet': '#9c31fe',
         'primary-blue': '#5956e9',
@@ -59,6 +63,8 @@ module.exports = {
       lg: { max: '1800px' },
       xmd: { max: '1200px' },
       md: { max: '990px' },
+      xsm: { max: '900px' },
+      hsm: { max: '800px' },
       sm: { max: '700px' },
       xs: { max: '500px' },
       minmd: { min: '990px' },

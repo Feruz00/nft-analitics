@@ -128,7 +128,7 @@ const Navbar = () => {
             />
 
           </div>
-          <div className={`${!lang && 'hidden'} overflow-hidden rounded-xl absolute fullp z-10 bg-white w-[200%] -left-1/2 dark:bg-nft-black-1 `}>
+          <div className={`${!lang && 'hidden'} overflow-hidden rounded-xl absolute fullp z-10 bg-white w-[200%] -right-0 dark:bg-nft-black-1 `}>
             {
               [{ name: 'EN', full: 'English' }, { name: 'ES', full: 'Espanol' }].map(
                 (i, index) => (
