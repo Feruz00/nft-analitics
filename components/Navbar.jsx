@@ -134,8 +134,8 @@ const Navbar = () => {
                 (i, index) => (
                   <div
                     className="px-1 py-3 flex flex-row cursor-pointer
-                  hover:bg-nft-gray-1 hover:text-nft-black
-                  dark:hover:bg-nft-gray-2
+                  hover:bg-nft-gray-1 hover:text-nft-gray-1
+                  dark:hover:bg-nft-black-1
                   "
                     key={index}
                   >
