@@ -1,29 +1,30 @@
+/* eslint-disable react/button-has-type */
 import Image from 'next/image';
-import React, { useEffect } from 'react';
-import { Chart } from 'react-google-charts';
+import React from 'react';
+// import { Chart } from 'react-google-charts';
 
 import portfolio from '../asserts/Icons/1_slider/Portfolio.png';
 
-const data = [
-  ['Language', 'Speakers (in millions)'],
-  ['Assamese', 13], ['Bengali', 83], ['Bodo', 1.4],
-  ['Dogri', 2.3], ['Gujarati', 46], ['Hindi', 300],
-  ['Kannada', 38], ['Kashmiri', 5.5], ['Konkani', 5],
-  ['Maithili', 20], ['Malayalam', 33], ['Manipuri', 1.5],
-  ['Marathi', 72], ['Nepali', 2.9], ['Oriya', 33],
-  ['Punjabi', 29], ['Sanskrit', 0.01], ['Santhali', 6.5],
-  ['Sindhi', 2.5], ['Tamil', 61], ['Telugu', 74], ['Urdu', 52],
-];
-const options = {
-  title: 'Indian Language Use',
-  legend: 'none',
-  pieSliceText: 'label',
-  slices: { 4: { offset: 0.2 },
-    12: { offset: 0.3 },
-    14: { offset: 0.4 },
-    15: { offset: 0.5 },
-  },
-};
+// const data = [
+//   ['Language', 'Speakers (in millions)'],
+//   ['Assamese', 13], ['Bengali', 83], ['Bodo', 1.4],
+//   ['Dogri', 2.3], ['Gujarati', 46], ['Hindi', 300],
+//   ['Kannada', 38], ['Kashmiri', 5.5], ['Konkani', 5],
+//   ['Maithili', 20], ['Malayalam', 33], ['Manipuri', 1.5],
+//   ['Marathi', 72], ['Nepali', 2.9], ['Oriya', 33],
+//   ['Punjabi', 29], ['Sanskrit', 0.01], ['Santhali', 6.5],
+//   ['Sindhi', 2.5], ['Tamil', 61], ['Telugu', 74], ['Urdu', 52],
+// ];
+// const options = {
+//   title: 'Indian Language Use',
+//   legend: 'none',
+//   pieSliceText: 'label',
+//   slices: { 4: { offset: 0.2 },
+//     12: { offset: 0.3 },
+//     14: { offset: 0.4 },
+//     15: { offset: 0.5 },
+//   },
+// };
 
 const HomeSlider1 = () => (
   <div className="flex-1 flex flex-row p-10 md:flex-col">
@@ -38,7 +39,7 @@ const HomeSlider1 = () => (
         text-gradient leading-normal"
         >platform for real-time
         </h1>
-        <h1 className="capitalize leading-normal	">
+        <h1 className="capitalize leading-normal">
           <span className="uppercase text-transparent text-6xl xs:text-4xl font-bold bg-clip-text bg-gradient-to-tl from-[#de57a6] to-[#9757d1]">nft </span>
           <span className="capitaliza text-4xl xs:text-3xl font-bold text-transparent text-top-bottom">Data Analytics.</span>
 

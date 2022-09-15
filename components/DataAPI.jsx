@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import arrow from '../asserts/Icons/5_slider/545682.png';
+// eslint-disable-next-line no-unused-vars
+// import arrow from '../asserts/Icons/5_slider/545682.png';
 import api from '../asserts/Icons/5_slider/API.png';
 import dogry from '../asserts/Icons/5_slider/6785304.png';
 
@@ -23,7 +24,7 @@ const DataAPI = () => (
       <div className="w-full flex justify-center">
         <h1 className="font-bold text-white text-4xl md:text-2xl sm:text-lg">Data API</h1>
       </div>
-      <p className="text-white text-lg font-bold sm:text-lg">Harness the power of NFTGO's data API to enhance your applications.</p>
+      <p className="text-white text-lg font-bold sm:text-lg">Harness the power of {'NFTGO\'s'} data API to enhance your applications.</p>
       {['Track real-time market data and transactions with a few short lines of code.',
         'Get historical  transactions and charts to improve your research.',
         'Fast, stable, and easy to use.',
