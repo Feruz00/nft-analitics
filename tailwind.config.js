@@ -2,6 +2,9 @@ module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
+    './containers/**/*.{js,ts,jsx,tsx}',
+    './asserts/**/*.{png,jpg,jpeg}',
+
   ],
   mode: 'jit',
   darkMode: 'class',
