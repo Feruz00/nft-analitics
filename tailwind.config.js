@@ -17,9 +17,9 @@ module.exports = {
         width: 'width',
       },
       backgroundImage: {
-        first: "url('../asserts/Icons/background/1.jpg')",
-        second: "url('../asserts/Icons/background/4-6.jpg')",
-        three: "url('../asserts/Icons/background/6.jpg')",
+        first: "url('./asserts/Icons/background/1.jpg')",
+        second: "url('./asserts/Icons/background/4-6.jpg')",
+        three: "url('./asserts/Icons/background/6.jpg')",
 
       },
       colors: {
