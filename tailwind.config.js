@@ -6,7 +6,7 @@ module.exports = {
     './asserts/**/*.{png,jpg,jpeg}',
 
   ],
-  mode: 'jit',
+  // mode: 'jit',
   darkMode: 'class',
   theme: {
     extend: {
@@ -17,9 +17,12 @@ module.exports = {
         width: 'width',
       },
       backgroundImage: {
-        first: "url('../asserts/Icons/background/1.jpg')",
-        second: "url('../asserts/Icons/background/4-6.jpg')",
-        three: "url('../asserts/Icons/background/6.jpg')",
+        first: 'url(/1.jpg)',
+        second: 'url(/4-6.jpg)',
+        three: 'url(/6.jpg)',
+        fer: "url('../asserts/Icons/background/1.jpg')",
+        sec: "url('../asserts/Icons/background/4-6.jpg')",
+        thre: "url('../asserts/Icons/background/6.jpg')",
 
       },
       colors: {
