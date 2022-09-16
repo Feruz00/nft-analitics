@@ -3,8 +3,8 @@ import Image from 'next/image';
 import Slider from 'react-slick';
 
 import mainPhoto from '../asserts/Icons/6_slider/header banner/1639682396_maxresdefault.png';
-import prevPhoto from '../asserts/Icons/6_slider/header banner/draw-an-eye-catching-cartoon-tshirt-design.png';
-import nextPhoto from '../asserts/Icons/6_slider/header banner/design-nft-banner-for-twitter-youtube-or-any-platforms.png';
+import prevPhoto from '../asserts/Icons/6_slider/header banner/79776.jpg';
+import nextPhoto from '../asserts/Icons/6_slider/header banner/basga.png';
 // import { useState } from 'react/cjs/react.production.min';
 
 const Slide = () => {
@@ -64,7 +64,7 @@ const Slide = () => {
         <div className="w-full relative  max-w-[1400px]">
           <Slider {...settings} ref={slide}>
             {
-                [prevPhoto, mainPhoto, nextPhoto, prevPhoto].map((i, item) => (
+                [prevPhoto, mainPhoto, nextPhoto].map((i, item) => (
                   <div key={item} className="w-60 h-40 m-6 ">
                     <Image src={i} objectFit="contain" alt="image" fill />
                   </div>

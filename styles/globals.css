@@ -301,6 +301,9 @@ background: linear-gradient(156deg, rgba(29,9,121,1) 16%, rgba(226,0,255,1) 100%
     place-items: center;
     
   }
+  .child { 
+    width:100%; 
+  }
 .slick-slide{
     display: flex !important;
     justify-items: center !important;
