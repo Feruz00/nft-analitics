@@ -1,9 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
-import moralis from '../asserts/Icons/2_slider/29500b387c4629afb7762e6afcfcd0fc.jpg';
+import { useTheme } from 'next-themes';
+import moralis from '../asserts/Icons/2_slider/29500b387c4629afb7762e6afcfcd0fc.png';
 import towsan from '../asserts/Icons/2_slider/download (1)_1.png';
-import nft from '../asserts/Icons/2_slider/download (4).jpg';
-import cyzyk from '../asserts/Icons/2_slider/download (13).jpg';
+import nft from '../asserts/Icons/2_slider/download (4).png';
+import cyzyk from '../asserts/Icons/2_slider/download (13).png';
 import arrow from '../asserts/Icons/2_slider/images (1).png';
 import gold from '../asserts/Icons/2_slider/images.png';
 import tofu from '../asserts/Icons/2_slider/tofu.png';
@@ -15,8 +16,13 @@ const Pictures = () => (
     </div>
     <div className="w-[90%] flex flex-row gap-10">
       <div className="flex flex-row">
-        <div>
-          <Image src={tofu} width="150px" height="200px" objectFit="cover" />
+        <div className="bg-transparent">
+          <Image
+            src={tofu}
+            width="150px"
+            height="200px"
+            objectFit="cover"
+          />
         </div>
         <div className="translate-y-1/2">
           <Image src={cyzyk} width="150px" height="150px" objectFit="cover" />

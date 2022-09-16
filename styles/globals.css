@@ -282,3 +282,7 @@ background: linear-gradient(156deg, rgba(29,9,121,1) 16%, rgba(226,0,255,1) 100%
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr) );
     grid-gap: 1rem;
 }
+.filter-100{
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
