@@ -289,12 +289,12 @@ background: linear-gradient(156deg, rgba(29,9,121,1) 16%, rgba(226,0,255,1) 100%
 .left-button{
     top: 50%;
     transform: translateY(-50%);
-    left:365px;
+    left:20%;
 }
 .left-right{
     top: 50%;
     transform: translateY(-50%);
-    right:440px;
+    right: 20%;
 }
 .slick-slide > div {
     display: grid;
