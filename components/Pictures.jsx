@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { useTheme } from 'next-themes';
+// import { useTheme } from 'next-themes';
 import moralis from '../asserts/Icons/2_slider/29500b387c4629afb7762e6afcfcd0fc.png';
 import towsan from '../asserts/Icons/2_slider/download (1)_1.png';
 import nft from '../asserts/Icons/2_slider/download (4).png';
