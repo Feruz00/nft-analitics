@@ -28,7 +28,7 @@ const Slide = () => {
       {
         breakpoint: 1260,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
           centerMode: true,
@@ -38,7 +38,7 @@ const Slide = () => {
       {
         breakpoint: 1060,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
           initialSlide: 0,
           centerMode: true,
@@ -66,7 +66,7 @@ const Slide = () => {
           <Slider {...settings} ref={slide}>
             {
                 [prevPhoto, mainPhoto, nextPhoto, otherPhoto].map((i, item) => (
-                  <div key={item} className="w-60 h-40 m-6 ">
+                  <div key={item} className="w-60 h-40 m-14 ">
                     <Image src={i} objectFit="contain" alt="image" fill />
                   </div>
                 ))
