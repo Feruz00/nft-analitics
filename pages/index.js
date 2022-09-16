@@ -1,5 +1,5 @@
 import React from 'react';
-import { HomeSlider1, Navbar, Analytics, Pictures, CollectionsSlider, Track, DataAPI, Join, Footer } from '../components';
+import { HomeSlider1, Navbar, Analytics, Pictures, CollectionsSlider, Track, DataAPI, Join, Footer, Slide } from '../components';
 import Title from '../components/Title';
 
 const Home = () => (
@@ -26,11 +26,13 @@ const Home = () => (
 
       <Pictures />
     </div>
-    <div className="bg-second w-full flex flex-col">
+    <div className="bg-second bg-no-repeat w-full flex flex-col">
       <CollectionsSlider />
       <Track />
       <DataAPI />
     </div>
+
+    <Slide />
     <div className="slider_last w-full p-10 bg-no-repeat min-h-[50vh] h-full sm:h-[150vh] flex items-center">
       <Join />
     </div>

@@ -52,6 +52,7 @@ const Table = () => (
     <div className="w-full h-full rounded-3xl bg-white
     flex justify-start items-start flex-row
     py-2
+    dark:bg-nft-black-2
     "
     >
       <div className="h-full w-fit flex flex-col border-right-image">
@@ -72,7 +73,7 @@ const Table = () => (
             <Item
               name={`$${i.volume}`}
               key={index}
-              className="text-center font-medium text-regal-blue bg-clip-text bg-gradient-to-r from-regal-blue to-[#9c31fe]"
+              className="text-center font-medium text-regal-blue dark:text-white bg-clip-text bg-gradient-to-r from-regal-blue to-[#9c31fe]"
 
             />
           ))}
@@ -84,7 +85,7 @@ const Table = () => (
             <Item
               key={index}
               name={`${i.delta ? `${i.delta}%` : '--'}`}
-              className={`text-center font-bold ${i.delta ? i.delta > 0 ? 'text-green' : 'text-red' : 'text-black'} `}
+              className={`text-center font-bold ${i.delta ? i.delta > 0 ? 'text-green' : 'text-red' : 'text-black dark:text-white'} `}
 
             />
           ))}
@@ -95,7 +96,7 @@ const Table = () => (
             <Item
               key={index}
               name={`${i.price}`}
-              className="text-center font-medium text-regal-blue "
+              className="text-center font-medium text-regal-blue dark:text-white "
 
             />
           ))}

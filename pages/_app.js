@@ -5,6 +5,9 @@ import '../styles/globals.css';
 import '../styles/nprogress.css';
 import { useRouter } from 'next/router';
 import nprogress from 'nprogress';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const MyApp = ({ Component, pageProps }) => {
   const [mounted, setMounted] = useState(false);

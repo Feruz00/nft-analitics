@@ -7,5 +7,6 @@ import CollectionsSlider from './CollectionsSlider';
 import Track from './Track';
 import DataAPI from './DataAPI';
 import Join from './Join';
+import Slide from './Slider';
 
-export { Navbar, Footer, HomeSlider1, Analytics, Pictures, CollectionsSlider, Track, DataAPI, Join };
+export { Navbar, Footer, HomeSlider1, Analytics, Pictures, CollectionsSlider, Track, DataAPI, Join, Slide };

@@ -286,3 +286,34 @@ background: linear-gradient(156deg, rgba(29,9,121,1) 16%, rgba(226,0,255,1) 100%
     -webkit-filter: invert(100%);
     filter: invert(100%);
 }
+.left-button{
+    top: 50%;
+    transform: translateY(-50%);
+    left:365px;
+}
+.left-right{
+    top: 50%;
+    transform: translateY(-50%);
+    right:440px;
+}
+.slick-slide > div {
+    display: grid;
+    place-items: center;
+    
+  }
+.slick-slide{
+    display: flex !important;
+    justify-items: center !important;
+}
+.slick-center { 
+    transform: scale(1.08) 
+  }
+  
+@media screen and (max-width:1260px) {
+    .left-button{
+        left:0;
+    }
+    .left-right{
+        right: 0;
+    }
+}
