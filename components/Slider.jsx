@@ -20,7 +20,7 @@ const Slide = () => {
     arrows: false,
     lazyLoad: true,
     centerMode: true,
-    centerPadding: '100px',
+    // centerPadding: '100px',
     focusOnSelect: true,
 
     responsive: [
@@ -31,7 +31,7 @@ const Slide = () => {
           slidesToScroll: 1,
           infinite: true,
           centerMode: true,
-          centerPadding: '0',
+        //   centerPadding: '0',
         },
       },
       {
@@ -41,7 +41,7 @@ const Slide = () => {
           slidesToScroll: 1,
           initialSlide: 0,
           centerMode: true,
-          centerPadding: '0',
+        //   centerPadding: '0',
         },
       },
       {
@@ -65,8 +65,8 @@ const Slide = () => {
           <Slider {...settings} ref={slide}>
             {
                 [prevPhoto, mainPhoto, nextPhoto, prevPhoto].map((i, item) => (
-                  <div key={item} className="w-full ">
-                    <Image src={i} width="300" height="150" objectFit="cover" />
+                  <div key={item} className="w-60 h-40 m-6 ">
+                    <Image src={i} objectFit="contain" alt="image" fill />
                   </div>
                 ))
             }

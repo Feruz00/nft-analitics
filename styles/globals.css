@@ -306,9 +306,15 @@ background: linear-gradient(156deg, rgba(29,9,121,1) 16%, rgba(226,0,255,1) 100%
     justify-items: center !important;
 }
 .slick-center { 
-    transform: scale(1.08) 
-  }
-  
+    transform: scaleY(1.4) scaleX(1.2);
+    z-index: 20;
+    position: relative;
+    transition: all 1s;
+    /* margin: 10px; */
+}
+.slick-slide:not(.slick-center) { 
+    /* margin: 20px; */
+}
 @media screen and (max-width:1260px) {
     .left-button{
         left:0;

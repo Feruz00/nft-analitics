@@ -137,7 +137,6 @@ const Navbar = () => {
                   transition duration-500
                   hover:bg-nft-gray-1
                   dark:hover:bg-nft-gray-2
-
                   "
                     key={index}
                   >
