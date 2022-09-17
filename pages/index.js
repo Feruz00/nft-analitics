@@ -26,7 +26,7 @@ const Home = () => (
 
       <Pictures />
     </div>
-    <div className="bg-second bg-no-repeat w-full flex flex-col">
+    <div className="bg-second bg-no-repeat w-full bg-cover flex flex-col">
       <CollectionsSlider />
       <Track />
       <DataAPI />
