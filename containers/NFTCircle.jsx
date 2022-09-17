@@ -20,11 +20,11 @@ const NFTCircle = ({ icon, name, time, total, price }) => (
       <Image width={25} height={25} objectFit="cover" src={world} className="invert filter" />
     </div>
     <div className="text-white absolute left-1 translate-y-2 ">
-      <Image width={25} height={25} objectFit="cover" src={insta} className="invert filter" />
+      <Image width={25} height={25} objectFit="cover" src={insta} className="invert filter" loading="lazy" />
     </div>
 
     <div className="text-white absolute left-3 translate-y-10  ">
-      <Image width={25} height={25} objectFit="cover" src={discord} className="invert filter" />
+      <Image width={25} height={25} objectFit="cover" src={discord} className="invert filter" loading="lazy" />
     </div>
 
     <div className="flex flex-col items-center justify-center ml-2 mr-2">
