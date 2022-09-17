@@ -21,7 +21,7 @@ const Icon = ({ url }) => (
 );
 const Section = ({ title, data }) => (
   <div className="flex flex-col w-full">
-    <h1 className="font-extraBold text-center text-lg mb-4">{title}</h1>
+    <h1 className="font-extraBold text-center text-lg mb-4 tracking-wide sm:underline">{title}</h1>
     {
       data.map((i, index) => (
         <Link href={i.href} key={index}>
@@ -62,7 +62,7 @@ const Footer = () => (
           }
 
         </div>
-        <p className="font-medium text-sm">&copy; 2022 THATISRARE - All rights reserved</p>
+        <p className="font-medium text-sm text-center">&copy; 2022 THATISRARE - All rights reserved</p>
       </div>
       <div className="flex-1 autofit">
         <Section

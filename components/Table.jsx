@@ -15,7 +15,9 @@ const Head = ({ text }) => (
 const Collection = ({ name, nft }) => (
   <div className="h-16 w-full flex flex-row items-center  py-3 px-4 ">
 
-    <div className={`w-10 h-10 p-[2px] relative rounded-full mr-7 ${nft ? 'bg-gradient-to-b from-[#00ffff] to-[#9c31fe]' : 'bg-white'}`}>
+    <div className={`w-10 h-10 p-[2px] relative rounded-full sm:w-8 sm:h-8  
+    mr-7 ${nft ? 'bg-gradient-to-b from-[#00ffff] to-[#9c31fe]' : 'bg-white'}`}
+    >
       {
           nft && (
           <div className="w-8 h-8 rounded-full absolute -top-1/3 -right-1/2 z-10 text-text-blue ">
@@ -28,7 +30,7 @@ const Collection = ({ name, nft }) => (
     </div>
 
     <div className="flex-1 flex justify-start">
-      <h1 className="font-medium text-center text-lg text-text-blue">{name}</h1>
+      <h1 className="font-medium text-center text-lg text-text-blue sm:text-base xs:text-sm">{name}</h1>
     </div>
 
   </div>

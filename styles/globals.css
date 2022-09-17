@@ -296,6 +296,17 @@ background: linear-gradient(156deg, rgba(29,9,121,1) 16%, rgba(226,0,255,1) 100%
     transform: translateY(-50%);
     right: 20%;
 }
+@media screen and (max-width:700px){
+    .left-button{
+        transform: translateY(0);
+        left:0;
+    }
+    .left-right{
+        /* top: 50%; */
+        transform: translateY(0);
+        right: 10%;
+    }
+}
 .slick-slide > div {
     display: grid;
     place-items: center;
@@ -325,6 +336,13 @@ background: linear-gradient(156deg, rgba(29,9,121,1) 16%, rgba(226,0,255,1) 100%
 }
 .slick-slide:not(.slick-center) { 
     /* margin: 20px; */
+}
+.grid-api{
+    display: grid;
+    grid-template-columns: max-content auto;
+    grid-row-gap: 1rem;
+    
+    /* white-space: wr; */
 }
 @media screen and (max-width:1260px) {
     .left-button{

@@ -76,7 +76,7 @@ const Navbar = () => {
               { name: 'Research', url: 'research' },
             ]}
             mainClassName="flex flex-row ml-4 minlg:text-3xl md:hidden"
-            className="m-4 font-bold inline-block
+            className="m-4 font-bold
             flex flex-row justify-between whitespace-nowrap
             items-center relative
             "

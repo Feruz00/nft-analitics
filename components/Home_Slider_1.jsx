@@ -36,15 +36,18 @@ const HomeSlider1 = () => (
         >all-in-one
         </h1>
         <h1 className="capitalize text-4xl text-transparent font-bold bg-clip-text
-        text-gradient leading-normal"
+        text-gradient leading-normal sm:text-2xl xs:text-xl"
         >platform for real-time
         </h1>
         <h1 className="capitalize leading-normal">
-          <span className="uppercase text-transparent text-6xl xs:text-4xl font-bold bg-clip-text bg-gradient-to-tl from-[#de57a6] to-[#9757d1]">nft </span>
-          <span className="capitaliza text-4xl xs:text-3xl font-bold text-transparent text-top-bottom">Data Analytics.</span>
+          <span className="uppercase text-transparent text-6xl sm:text-4xl xs:text-xl font-bold bg-clip-text bg-gradient-to-tl from-[#de57a6] to-[#9757d1]">nft </span>
+          <span className="capitaliza text-4xl sm:text-3xl xs:text-lg font-bold text-transparent text-top-bottom">Data Analytics.</span>
 
         </h1>
-        <p className="text-white w-[90%] md:text-center xs:text-xl  mt-4 leading-normal font-medium text-xl">Discovery and analysis of data on the hottest
+        <p className="text-white w-[90%] sm:w-full
+        md:text-center  mt-4
+        leading-normal font-medium text-xl sm:text-base xs:text-sm"
+        >Discovery and analysis of data on the hottest
           NFTs out on the marketplace and make better
           NFT decisions with HATISRARE NFT Analytics and
           Data services!
@@ -56,17 +59,28 @@ const HomeSlider1 = () => (
         <button className="rounded-3xl bg-primary-blue font-semibold text-2xl
         text-white px-4 py-2 xs:mb-6 flex items-center justify-center transition hover:bg-hover-blue
         hover:shadow-lg
+        sm:text-xl xs:text-lg
+        sm:px-3 sm:py-1
+        xs:px-2
         "
         >
           Get Started
         </button>
 
         <button className="text-white flex flex-row items-center justify-center px-4 py-2 rounded-3xl
-        border border-transparent hover:border-white"
+        border border-transparent hover:border-white
+        sm:text-xl xs:text-lg
+        sm:px-3 sm:py-1
+        xs:px-2
+        "
         >
           <Image src={portfolio} objectFit="cover" className="xs:hidden" />
           <span className="ml-2 text-2xl text-white
-        flex items-center justify-center hover:drop-shadow whitespace-nowrap"
+        flex items-center justify-center hover:drop-shadow whitespace-nowrap
+        sm:text-xl xs:text-lg
+        sm:px-3 sm:py-1
+        xs:px-2
+        "
           >My Portfolio
           </span>
         </button>

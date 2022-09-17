@@ -13,23 +13,27 @@ const Item = ({ url, headText, mainText, number, name, icon, iconStyle, iconText
   <div className="flex-1 flex flex-row justify-center items-center px-4 border-4 border-white rounded-3xl h-full
   xmd:mr-3
   xsm:mb-3
+  xs:w-full
+  xs:pr-0
   "
   >
 
-    <div className="w-24 h-24 rounded-full overflow-hidden">
+    <div className="w-24 h-24 rounded-full overflow-hidden xs:w-12 xs:h-12">
       <Image src={url} width="100%" height="100%" objectFit="cover" />
     </div>
 
-    <div className="flex flex-col flex-1 ml-5 h-full justify-evenly">
-      <h1 className="text-2xl sm:text-lg text-white font-bold">{headText}</h1>
-      <p className="text-base sm:text-sm text-white font-bold">{mainText}</p>
+    <div className="flex flex-col flex-1 ml-5 h-full justify-evenly ">
+      <h1 className="text-2xl sm:text-lg text-white font-bold xs:text-base">{headText}</h1>
+      <p className="text-base sm:text-sm text-white font-bold xs:text-xs">{mainText}</p>
       <div className="w-full flex flex-row justify-around items-end xsm:justify-start">
-        <p className="text-white text-2xl sm:text-lg font-bold xsm:pr-3"> <span className="text-4xl sm:text-xl font-extraBold">{number}</span> {name} </p>
+        <p className="text-white text-2xl sm:text-lg xs:text-base font-bold xsm:pr-3">
+          <span className="text-4xl sm:text-xl xs:text-lg font-extraBold">{number}</span> {name}
+        </p>
 
         <div className={`w-10 h-10 sm:w-6 sm:h-6 ${iconStyle} xsm:pr-3 `}>
           <Image src={icon} height="100%" width="100%" className="filter invert" />
         </div>
-        <p className={`${iconTextStyle} font-bold text-xl`}>{iconText}</p>
+        <p className={`${iconTextStyle} font-bold text-xl sm:text-lg xs:text-base`}>{iconText}</p>
       </div>
 
     </div>

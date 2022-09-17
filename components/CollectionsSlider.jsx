@@ -37,11 +37,14 @@ const CollectionsSlider = () => {
           <h1 className="text-7xl font-bold text-white sm:text-2xl">Upcoming <br /> Collections</h1>
           <p className="text-xl font-medium text-white sm:text-base">Be first to hear about upcoming NFT drops.</p>
         </div>
-        <div className="w-full flex justify-center items-center hsm:my-10">
+        <div className="w-full flex justify-center items-center hsm:my-10 xs:flex-1">
           {/*  eslint-disable-next-line react/button-has-type */}
           <button className="border-4 rounded-full py-2 px-6 font-bold text-white text-xl
            transition duration-700 hover:text-nft-red-violet hover:bg-white
            sm:text-base
+           xs:text-sm xs:px-1
+           xs:w-full
+           xs:flex xs:justify-center xs:items-center
         "
           >View More
             <i className="fa-solid fa-arrow-right ml-4" />
@@ -52,7 +55,7 @@ const CollectionsSlider = () => {
       <div className="flex-1 flex flex-row flex-wrap justify-end hsm:justify-start">
         {
           data.map((i, item) => (
-            <div className={`w-64 h-64 min-w-64 min-h-64 mr-1 mb-2  ${item >= 3 && 'sm:hidden'} `} key={item}>
+            <div className={`w-64 h-64 min-w-64 min-h-64 mr-1 mb-2 xs:h-48 xs:w-48 ${item >= 3 && 'sm:hidden'} `} key={item}>
               <NFTCircle icon={i.icon} name={i.name} time={i.time} total={i.total} price={i.price} />
 
             </div>

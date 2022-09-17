@@ -22,7 +22,7 @@ const Home = () => (
       <Analytics />
     </div>
 
-    <div className="h-screen w-full flex justify-center mt-10">
+    <div className=" w-full flex justify-center mt-10">
 
       <Pictures />
     </div>
@@ -33,7 +33,7 @@ const Home = () => (
     </div>
 
     <Slide />
-    <div className="slider_last w-full p-10 bg-no-repeat min-h-[50vh] h-full sm:h-[150vh] flex items-center">
+    <div className="slider_last w-full p-12 bg-no-repeat flex items-center  sm:p-3">
       <Join />
     </div>
     <Footer />

@@ -89,6 +89,7 @@ const Slide = () => {
   bg-gradient-to-b from-nft-red-violet to-purple-700 text-white text-3xl cursor-pointer
   xsm:w-9 xsm:h-9 xsm:text-lg
   left-right
+
 "
             onClick={() => slide.current.slickNext()}
           >
