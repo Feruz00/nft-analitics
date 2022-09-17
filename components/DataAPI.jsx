@@ -19,14 +19,14 @@ const Item = ({ item }) => (
 );
 
 const DataAPI = () => (
-  <div className="h-screen p-10 flex flex-row xsm:flex-col-reverse">
+  <div className=" p-10 flex flex-row xsm:flex-col-reverse sm:py-2">
     <div className="flex-1 flex h-full items-center justify-center xsm:mt-4">
       {/* <div className="w-full "> */}
 
       <Image src={api} className="w-full sm:w-5 sm:h-5" />
       {/* </div> */}
     </div>
-    <div className="flex-[1.3] flex flex-col h-[80%] items-center justify-around">
+    <div className="flex-[1.3] flex flex-col h-[80%] max-h-[40%] items-center justify-around ">
       <div className="w-full flex justify-center">
         <h1 className="font-bold text-white text-4xl md:text-2xl sm:text-xl">Data API</h1>
       </div>

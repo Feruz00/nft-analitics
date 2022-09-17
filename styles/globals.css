@@ -340,7 +340,7 @@ background: linear-gradient(156deg, rgba(29,9,121,1) 16%, rgba(226,0,255,1) 100%
 .grid-api{
     display: grid;
     grid-template-columns: max-content auto;
-    grid-row-gap: 1rem;
+    row-gap: 1rem;
     
     /* white-space: wr; */
 }
