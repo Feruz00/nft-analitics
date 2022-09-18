@@ -23,15 +23,16 @@ const Pictures = () => (
             width={150}
             height={200}
             objectFit="cover"
+            placeholder="blur"
           />
         </div>
 
         <div className="translate-y-1/2 xs:translate-y-0">
-          <Image src={cyzyk} width="150px" height="150px" objectFit="cover" />
+          <Image src={cyzyk} width="150px" height="150px" objectFit="cover" placeholder="blur" />
 
         </div>
         <div className="-translate-y-1/2 xs:translate-y-0">
-          <Image src={gold} width="150px" height="300px" objectFit="cover" />
+          <Image src={gold} width="150px" height="300px" objectFit="cover" placeholder="blur" />
         </div>
 
       </div>
@@ -41,20 +42,21 @@ const Pictures = () => (
           src={nft}
           width={200}
           height={200}
+          placeholder="blur"
         />
       </div>
 
       <div className="flex flex-row  xs:items-center xs:gap-2 ">
         <div className="-translate-y-1/2 xs:translate-y-0">
-          <Image src={arrow} width="150px" height="200px" objectFit="cover" />
+          <Image src={arrow} width="150px" height="200px" objectFit="cover" placeholder="blur" />
 
         </div>
         <div className="translate-y-1/2 xs:translate-y-0">
-          <Image src={towsan} width="100px" height="100px" objectFit="cover" />
+          <Image src={towsan} width="100px" height="100px" objectFit="cover" placeholder="blur" />
 
         </div>
         <div>
-          <Image src={moralis} width="150px" height="200px" objectFit="cover" />
+          <Image src={moralis} width="150px" height="200px" objectFit="cover" placeholder="blur" />
 
         </div>
       </div>
